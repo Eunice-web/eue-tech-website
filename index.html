@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EUE TECH | IT Support & Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+        
+  
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+<div class="container header-content">
+  <div class="logo-area">
+    <!-- Replace 'logo.png' with your actual logo file path -->
+    <img src="white logo.png" alt="Logo" class="brand-logo" />
+  </div>
+
+  <div class="brand-text">
+    <a href="#home" class="logo" id="homeLink">EUE<span> TECH</span></a>
+    <p class="tagline">WHERE LITTLE DETAILS MATTER</p>
+  </div>
+</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="mainNav">
+                    <li><a href="#home" id="navHome" class="active">HOME</a></li>
+                    <li><a href="#it-support" class="nav-link" data-page="it-support">OUR SERVICES</a></li>
+                    <li><a href="#topics" class="nav-link" data-page="topics">TOPICS</a></li>
+                    <li class="dropdown">
+                        <div class="dropdown-toggle" id="aboutDropdown">
+                            <span>ABOUT</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-menu">
+                            <a href="#founder" class="nav-link" data-page="founder">FOUNDER</a>
+                            <a href="#company" class="nav-link" data-page="company">COMPANY</a>
+                            <a href="#partners" class="nav-link" data-page="partners">PARTNERS</a>
+                            <a href="#team" class="nav-link" data-page="team">OUR TEAM</a>
+                            <a href="#events" class="nav-link" data-page="events">EVENTS</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact" class="nav-link" data-page="contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            
+            <div class="social-nav">
+                <a href="www.linkedin.com/in/eunice-ng-ang-a-1b8588281"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Home Content -->
+    <main id="homeContent" class="page-content active">
+        <!-- Hero Slider -->
+        <section class="hero" id="home">
+            <div class="slider-container">
+                <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('euephoto.jpeg')">
+                    <div class="slide-content">
+                        <h1>Expert Education and IT support</h1>
+                        <p>Providing cutting-edge IT solutions and professional education to make technology easier for a daily user.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')">
+                    <div class="slide-content">
+                        <h1>Fostered Learning Topics</h1>
+                        <p>Access premium educational content and stay ahead in the competitive tech landscape.</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('logoblack.jpeg')">
+                    <div class="slide-content">
+                        <h1>Professional Development</h1>
+                        <p>Enhance your skills with our comprehensive IT training and support services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="mission-vision">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Mission & Vision</h2>
+                    <p>Driving simplicity through technology education and support</p>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Our Mission</h3>
+                        <p>To bridge the gap between people and technology through education, making IT understandable, accessible, and actionable for everyone, regardless of their background.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Our Vision</h3>
+                        <p>To foster an environment where understanding technology feels safe, accessible, and empowering for every person, at every level.</p>
+                    </div>
+                    <!--<div class="card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Our Values</h3>
+                        <p> Clarity — We simplify without dumbing down.
+                            <br>
+Respect — We meet every person where they are.
+<br>
+Empowerment — We educate so people leave more capable than they arrived.
+<br>
+Transparency — We are open about what we know, what we don't, and how we work.
+<br>
+Community — We grow with the people we serve, not above them.</p>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Analytics Section -->
+        <section class="analytics">
+            <div class="container">
+                <div class="section-title">
+                    <h2 style="color: white;">Our Impact</h2>
+                    <p style="color: rgba(255,255,255,0.8)">Transforming lives through technology education</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="studentsTaught">5000+</div>
+                        <div class="stat-label">Students Taught</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="itIssuesResolved">12000+</div>
+                        <div class="stat-label">IT Issues Resolved</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="linkedinFollowers">25000+</div>
+                        <div class="stat-label">LinkedIn Followers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="partnerCompanies">150+</div>
+                        <div class="stat-label">Partner Companies</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Partners</h2>
+                    <p>Collaborating with industry leaders to deliver excellence</p>
+                </div>
+                <div class="partner-logos">
+                    <img src="https://via.placeholder.com/150x80/3b82f6/ffffff?text=TechCorp" alt="Partner 1" class="partner-logo">
+                    <img src="https://via.placeholder.com/150x80/3b82f6/ffffff?text=InnovateIT" alt="Partner 2" class="partner-logo">
+                    <img src="https://via.placeholder.com/150x80/3b82f6/ffffff?text=DigitalSolutions" alt="Partner 3" class="partner-logo">
+                    <img src="https://via.placeholder.com/150x80/3b82f6/ffffff?text=FutureTech" alt="Partner 4" class="partner-logo">
+                    <img src="https://via.placeholder.com/150x80/3b82f6/ffffff?text=EduTech" alt="Partner 5" class="partner-logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section" id="contact">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions about our IT support services or educational content? Reach out to us and we'll respond promptly.</p>
+                    
+                    <div class="contact-details">
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>euetechh@gmail.com</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone"></i>
+                            <span>+254 111721008</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nairobi, Kenya</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9AM-6PM | Sat: 10AM-4PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="it-support">IT Support</option>
+                            <option value="education">Education/Topics</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Other Page Content -->
+    <div id="pageContentContainer"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>EUE TECH</h4>
+                    <p>Providing expert IT support and educational content to help individuals and businesses thrive in the digital world.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <a href="#home" id="footerHome">Home</a>
+                    <a href="#it-support" class="footer-link" data-page="it-support">Our Services</a>
+                    <a href="#topics" class="footer-link" data-page="topics">Topics</a>
+                    <a href="#company" class="footer-link" data-page="company">About Us</a>
+                    <a href="#contact" class="footer-link" data-page="contact">Contact</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya.</p>
+                    <p><i class="fas fa-phone"></i> +254 111721008</p>
+                    <p><i class="fas fa-envelope"></i> support@euetech.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <a href="#it-support" class="footer-link" data-page="it-support">User Education</a>
+                    <a href="#it-support" class="footer-link" data-page="it-support">IT Support</a>
+                    <a href="#topics" class="footer-link" data-page="topics">How attacks work</a>
+                    <a href="#events" class="footer-link" data-page="events">Workshops</a>
+                    <a href="#events" class="footer-link" data-page="events">Corporate Training</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 EUE TECH. All rights reserved. | Designed with <i class="fas fa-heart" style="color: #ef4444;"></i> for the tech community</p>
+            </div>
+        </div>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>

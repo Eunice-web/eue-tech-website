@@ -1,0 +1,27 @@
+name: Deploy to Truehost
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.CPANEL_HOST }}
+          username: ${{ secrets.CPANEL_USER }}
+          password: ${{ secrets.CPANEL_PASS }}
+          protocol: ftps
+          port: ${{ secrets.CPANEL_PORT }}
+          local-dir: ./
+          server-dir: ${{ secrets.CPANEL_DIR }}
+          dangerous-clean-slate: false
+          

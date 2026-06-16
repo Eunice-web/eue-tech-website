@@ -79,7 +79,7 @@ var update = function () {
 };
 requestAnimationFrame(update);
 //----------------------Time Counter----------------------//
-var countDownDate = new Date("Jun 15, 2026 15:37:25").getTime();
+var countDownDate = new Date("Jun 19, 2026 23:59:00").getTime();
 var last = "00:00:00:00";
 var x = setInterval(function () {
   var now = new Date().getTime();
